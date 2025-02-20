@@ -301,16 +301,13 @@
                                                 // URL para abrir la app de Uber
                                                 let uberAppUrl = `uber://?action=setPickup&dropoff[formatted_address]=${destino}`;
                                     
-                                                // URL alternativa si la app no está instalada
-                                                let uberWebUrl = `https://m.uber.com/looking?dropoff=${destino}`;
-                                    
                                                 // Intentar abrir la app de Uber
                                                 window.location.href = uberAppUrl;
                                     
                                                 // Si la app no se abre en unos milisegundos, redirigir a la web de Uber
                                                 setTimeout(() => {
                                                     window.location.href = uberWebUrl;
-                                                }, 1500);
+                                                }, 5000);
                                             }
                                         </script>
                                         <img src="/img/flags/uber_icon.png" onclick="abrirUber()"class="flag-size" >
