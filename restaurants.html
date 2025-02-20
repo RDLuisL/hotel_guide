@@ -296,7 +296,7 @@
                                         <script>
                                             function abrirUber() {
                                                 // Dirección de destino (Ejemplo: Plaza de Armas, Santiago, Chile)
-                                                let destino = encodeURIComponent("Plaza de Armas, Santiago, Chile");
+                                                let destino = encodeURIComponent("Aquí Está Coco, Santiago, Chile");
                                     
                                                 // URL para abrir la app de Uber
                                                 let uberAppUrl = `uber://?action=setPickup&dropoff[formatted_address]=${destino}`;
@@ -313,11 +313,7 @@
                                                 }, 1500);
                                             }
                                         </script>
-                                    </head>
-                                    <body>
-                                        <button onclick="abrirUber()"><img src="/img/flags/uber_icon.png" class="flag-size" ></button>
-                                    
-                                    
+                                        <img src="/img/flags/uber_icon.png" onclick="abrirUber()"class="flag-size" >
                                 </div>
                             </div>
                         </div>
